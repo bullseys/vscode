@@ -206,3 +206,5 @@ Mode                LastWriteTime         Length Name
 ```
 - 変更内容のステージング、push
     -  VScodeのGUIで操作
+
+- GitHub側で編集した後にpull
