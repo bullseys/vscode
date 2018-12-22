@@ -212,7 +212,7 @@ Mode                LastWriteTime         Length Name
         2. PowerShellで操作
 
 - GitHub側で編集した後にpull
-
+    - GitHub側で編集してみる
 ```
 PS C:\Users\kiyot\Desktop\git\vscode> git pull origin master
 From github.com:bullseys/vscode
