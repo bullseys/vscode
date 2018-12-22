@@ -205,6 +205,19 @@ Mode                LastWriteTime         Length Name
 
 ```
 - 変更内容のステージング、push
-    -  VScodeのGUIで操作
+    - 2つの方法がある
+        1. VScodeのGUIで操作
+            - 今回はこっち
+            - GUIなので手順は割愛
+        2. PowerShellで操作
 
 - GitHub側で編集した後にpull
+
+```
+PS C:\Users\kiyot\Desktop\git\vscode> git pull origin master
+From github.com:bullseys/vscode
+ * branch            master     -> FETCH_HEAD
+Updating 1f45045..9c015e5
+Fast-forward
+ "VScode\343\201\213\343\202\211Github\343\201\270push.md" | 2 ++
+ 1 file changed, 2 insertions(+)
