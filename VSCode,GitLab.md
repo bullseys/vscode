@@ -159,4 +159,60 @@ drwxr-xr-x 8 root root  220 12月 23 00:12 .git
 
 ```
 - ここまでの手順をWindowsのローカルリポジトリからGitLab,GitHubにpush
-- [GitHubのリモートリポジトリはpublic設定になっているので見れる](a)
+
+```
+
+S C:\Users\kiyot> Get-ChildItem C:\Users\kiyot\Desktop\git\vps\
+
+
+    ディレクトリ: C:\Users\kiyot\Desktop\git\vps
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----       2018/12/22     23:18             64 jenkins_practice.sh
+-a----       2018/12/22     23:18             79 local.md
+-a----       2018/12/22     23:18             51 README.md
+-a----       2018/12/23      0:17           5810 VSCode,GitLab.md
+
+
+PS C:\Users\kiyot> Copy-Item 'C:\Users\kiyot\Desktop\git\vps\VSCode,GitLab.md' C:\Users\kiyot\Desktop\git\vscode\
+PS C:\Users\kiyot> echo $?
+True
+
+→コピーは正常に実行された
+
+PS C:\Users\kiyot> Get-ChildItem C:\Users\kiyot\Desktop\git\vscode\
+
+
+    ディレクトリ: C:\Users\kiyot\Desktop\git\vscode
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----       2018/12/22     17:44             86 README.md
+-a----       2018/12/23      0:17           5810 VSCode,GitLab.md
+-a----       2018/12/22     21:50           8015 VScodeからGithubへpush.md
+
+→確認できた
+→後はVSCodeのGUIかPowerShellのCLIでpushするだけ
+
+PS C:\Users\kiyot\Desktop\git\vscode> git add .
+
+PS C:\Users\kiyot\Desktop\git\vscode> git commit -m "this change contains from both GitLab and VSCode"
+[master 87b4f8c] this change contains from both GitLab and VSCode
+ 1 file changed, 162 insertions(+)
+ create mode 100644 VSCode,GitLab.md
+
+PS C:\Users\kiyot\Desktop\git\vscode> git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 2.55 KiB | 2.55 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To github.com:bullseys/vscode.git
+   9bbbbf3..87b4f8c  master -> master
+
+```
+- [GitHubのリモートリポジトリはpublic設定になっているので見れる](https://github.com/bullseys/vscode)
