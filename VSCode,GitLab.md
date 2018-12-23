@@ -9,7 +9,7 @@
 
 ```
 PS C:\Users\kiyot\Desktop\git\vps> Get-Content C:\Users\kiyot\.ssh\id_rsa.pub
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDZOp8xkatEmSXdZjdyzM35iYiINDEL3zQ8L442w2JDA5pq5OeflRNRzMsJfgwG/Cbj9E6I4YSBs4hYjVDsqv3GTANB3Zn4t8vm+VdMVbzK/wDzmRGQzIyGextrcyCddi2VRHRdZqlIe3cdGXXYOgoOqOBFk7gcIzTmvBGftwo61J+Z+b94Kfu9z8ZV0hx+LuMGO7pGde8vSYrdHoj5ElljxURggEOsCC/deGqqXJsCywfAdM1XzH2lsR/qf2R+yhmXd5zjUjz/hj0Sr6WcsSgDZDXbRScwv0dakkyaZwMLcjIn6qLa19ZlTJR6qnom2dC6VvCTS00G5jsMUSx/ewZr kiyot@DESKTOP-UMR1JUL
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDZOp8xkatEmSXdZjdyzM35iYiINDEL3zQ8L442w2JDA5pq5OeflRNRzMsJfgwG/Cbj9E6I4YSBs4hYjVDsqv3GTANB3Zn4t8vm+VdMVbzK/wDzmRGQzIyGextrcyCddi2VRHRdZqlIe3cdGXXYOgoOqOBFk7gcIzTmvBGftwo61J+Z+b94Kfu9z8ZV0hx+LuMGO7pGde8vSYrdHoj5ElljxURggEOsCC/deGqqXJsCywfAdM1XzH2lsR/qf2R+yhmXd5zjUjz/hj0Sr6WcsSgDZDXbRScwv0dakkyaZwMLcjIn6qLa19ZlTJ
 
 →これをGitLabに登録
 
@@ -25,7 +25,7 @@ PS C:\Users\kiyot> Set-Location C:\Users\kiyot\Desktop\git\
 PS C:\Users\kiyot\Desktop\git> git clone git@gitlab.com:bullseyes/vps.git
 Cloning into 'vps'...
 The authenticity of host 'gitlab.com (35.231.145.151)' can't be established.
-ECDSA key fingerprint is SHA256:HbW3g8zUjNSksFbqTiUWPWg2Bq1x8xdGUrliXFzSnUw.
+ECDSA key fingerprint is SHA256:HbW3
 Are you sure you want to continue connecting (yes/no)? yes
 Warning: Permanently added 'gitlab.com,35.231.145.151' (ECDSA) to the list of known hosts.
 remote: Enumerating objects: 15, done.
